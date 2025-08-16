@@ -16,7 +16,7 @@ pipeline {
               sh 'mvn clean test'
           }
       }
-      stage("oackage"){
+      stage("package"){
           steps{
               echo 'packaging the app...'
               sh 'mvn package -DskipTests'
